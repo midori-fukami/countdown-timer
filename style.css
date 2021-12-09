@@ -1,0 +1,51 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.text {
+    color: hsl(237, 18%, 59%);
+}
+
+.number {
+    color: hsl(345, 95%, 68%);
+    background-color: hsl(236, 21%, 26%);
+    border-color: hsl(235, 16%, 14%);
+}
+
+.title {
+    color: hsl(0, 0%, 100%);
+}
+
+.icons {
+    color: hsl(237, 18%, 59%);
+}
+
+body {
+    height: 100vh;
+    letter-spacing: 5px;
+    margin: 0;
+    font-size: 14px;
+    background-color: hsl(234, 17%, 12%);
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/images/pattern-hills.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+main {
+    margin: 0;
+    text-align: center;
+    background-image: url("/images/bg-stars.svg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}

@@ -5,31 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Christmas countdown timer</title>
 
-    <title>Frontend Mentor | Launch countdown timer</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-        
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <main>
+        <h1 class="title">
+            Christmas is coming in
+        </h1>
 
-    We're launching soon Days Hours Minutes Seconds
+        <section>
+            <div>
+                <div id='day'></div>
+                <p class="text">DAYS</p>
+            </div>
+            <div>
+                <div id='hour'></div>
+                <p class="text">HOURS</p>
+            </div>
+            <div>
+                <div id='minute'></div>
+                <p class="text">MINUTES</p>
+            </div>
+            <div>
+                <div id='second'></div>
+                <p class="text">SECONDS</p>
+            </div>
+        </section>
 
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a target="_blank" href="https://github.com/midori-fukami/">Midori Fukami</a>.
-    </div>
+        <section class="icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-twitch"></i>
+        </section>
+
+        <div class="attribution text">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a target="_blank" href="https://github.com/midori-fukami/">Midori Fukami</a>.
+        </div>
+    </main>
 </body>
 
 </html>
