@@ -6,6 +6,7 @@
     --neutral-very-dark-blue: hsl(235, 16%, 14%);
     --neutral-very-mostly-black-blue: hsl(234, 17%, 12%);
     --dark-blue: hsl(267.5, 28.6%, 16.5%);
+    --dark-blue-top: hsl(240, 21%, 22%);
 }
 
 body {
@@ -51,11 +52,12 @@ main {
     color: var(--primary-grayish-blue);
 }
 
-.date .number {
+.date .number-card {
+    position: relative;
     color: var(--primary-soft-red);
     background-color: var(--neutral-dark-desaturated-blue);
     border-color: var(--neutral-very-dark-blue);
-    margin: 0 50px;
+    margin: 0 20px;
     font-size: 60pt;
     width: 150px;
     height: 150px;
@@ -64,6 +66,68 @@ main {
     align-items: center;
     border-radius: 10px;
     box-shadow: 0px 10px 0 var(--neutral-very-mostly-black-blue);
+}
+
+.date .number-card .dot {
+    content: '';
+    position: absolute;
+    width: 0.10em;
+    height: 0.20em;
+    -webkit-transform: translateY(50%);
+    transform: translateY(-50%);
+    background-color: var(--neutral-very-mostly-black-blue);
+    top: 50%;
+    border-top-right-radius: 110px;
+    border-bottom-right-radius: 110px;
+    left: 0;
+}
+
+.date .number-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(var(--neutral-dark-desaturated-blue) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.20) 100%);
+    border-bottom: solid 1px rgba( 0, 0, 0, 0.4);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.date .number-card::after {
+    content: '';
+    position: absolute;
+    width: 0.10em;
+    height: 0.20em;
+    -webkit-transform: translateY(50%);
+    transform: translateY(-50%);
+    background-color: var(--neutral-very-mostly-black-blue);
+    top: 50%;
+    border-top-left-radius: 110px;
+    border-bottom-left-radius: 110px;
+    right: 0;
+}
+
+.date .number-card .number {
+    position: absolute;
+}
+
+.date .number-card .trace {
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.20) 100%);
+    border-bottom: solid 1px rgba( 0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.date .number-card .number.-top {
+    -webkit-clip-path: inset(0 0 50% 0);
+    clip-path: inset(0 0 50% 0);
+}
+
+.date .number-card .number.-bottom {
+    -webkit-clip-path: inset(50% 0 0 0);
+    clip-path: inset(50% 0 0 0);
 }
 
 .icons {
