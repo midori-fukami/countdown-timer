@@ -2,7 +2,8 @@ setInterval(function() {
     update();
 }, 1000);
 
-let end = new Date('12/25/2021 00:00 AM');
+let currentDate = new Date();
+let end = currentDate > new Date('12/25/' + currentDate.getFullYear()) ? new Date('12/25/' + (currentDate.getFullYear() + 1)) : new Date('12/25/' + currentDate.getFullYear());
 
 let _second = 1000;
 let _minute = _second * 60;
